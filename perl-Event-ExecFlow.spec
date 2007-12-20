@@ -11,6 +11,7 @@ License:   Artistic
 Group:     Development/Perl
 URL:       http://www.exit1.org/Event-ExecFlow/
 SOURCE:    http://search.cpan.org/CPAN/authors/id/J/JR/JRED/Event-ExecFlow-%version.tar.bz2
+Buildroot: %{_tmppath}/%{name}-%{version}-%(id -u -n)
 Buildarch: noarch
 BuildRequires: perl-devel
 BuildRequires: perl-AnyEvent
