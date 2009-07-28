@@ -1,17 +1,18 @@
 %define pkgname Event-ExecFlow
-%define filelist %{pkgname}-%{version}-filelist
-%define NVR %{pkgname}-%{version}-%{release}
+%define filelist %{pkgname}-%{upstream_version}-filelist
+%define NVR %{pkgname}-%{upstream_version}-%{release}
 %define maketest 1
+%define upstream_version 0.63
 
 Name:      perl-Event-ExecFlow
 Summary:   Event-RPC - High level API for event-based execution flow control
-Version:   0.63
-Release:   %mkrel 3
+Version:   %perl_convert_version %upstream_version
+Release:   %mkrel 1
 License:   Artistic
 Group:     Development/Perl
 URL:       http://www.exit1.org/Event-ExecFlow/
-SOURCE:    http://search.cpan.org/CPAN/authors/id/J/JR/JRED/Event-ExecFlow-%version.tar.bz2
-Buildroot: %{_tmppath}/%{name}-%{version}-%(id -u -n)
+SOURCE:    http://search.cpan.org/CPAN/authors/id/J/JR/JRED/Event-ExecFlow-%upstream_version.tar.bz2
+Buildroot: %{_tmppath}/%{name}-%{upstream_version}-%(id -u -n)
 Buildarch: noarch
 BuildRequires: perl-devel
 BuildRequires: perl-AnyEvent
@@ -22,8 +23,8 @@ Event::ExecFlow provides a ligh level API for defining complex flow
 controls with asynchronous execution of external programs.
 
 %prep
-%setup -q -n %{pkgname}-%{version} 
-chmod -R u+w %{_builddir}/%{pkgname}-%{version}
+%setup -q -n %{pkgname}-%{upstream_version} 
+chmod -R u+w %{_builddir}/%{pkgname}-%{upstream_version}
 
 %build
 grep -rsl '^#!.*perl' . |
