@@ -2,7 +2,7 @@
 %define filelist %{pkgname}-%{upstream_version}-filelist
 %define NVR %{pkgname}-%{upstream_version}-%{release}
 %define maketest 1
-%define upstream_version 0.63
+%define upstream_version 0.64
 
 Name:      perl-Event-ExecFlow
 Summary:   Event-RPC - High level API for event-based execution flow control
