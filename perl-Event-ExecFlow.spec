@@ -64,3 +64,48 @@ find %{buildroot}%{_prefix}             \
 %{perl_vendorlib}/Event/ExecFlow*
 %_mandir/man3/Event::ExecFlow*
 
+
+
+%changelog
+* Fri Jan 20 2012 Götz Waschk <waschk@mandriva.org> 0.640.0-3mdv2012.0
++ Revision: 763021
+- rebuild
+
+* Tue Jul 26 2011 Götz Waschk <waschk@mandriva.org> 0.640.0-2
++ Revision: 691693
+- rebuild
+
+* Wed Jan 06 2010 Götz Waschk <waschk@mandriva.org> 0.640.0-1mdv2011.0
++ Revision: 486564
+- update to new version 0.64
+
+* Tue Jul 28 2009 Götz Waschk <waschk@mandriva.org> 0.630.0-1mdv2010.0
++ Revision: 401505
+- use perl version macro
+
+* Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 0.63-3mdv2009.0
++ Revision: 256812
+- rebuild
+
+* Thu Dec 20 2007 Olivier Blin <blino@mandriva.org> 0.63-1mdv2008.1
++ Revision: 135841
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Tue Apr 17 2007 Götz Waschk <waschk@mandriva.org> 0.63-1mdv2007.1
++ Revision: 13562
+- new version
+
+
+* Sun Jun 18 2006 Götz Waschk <waschk@mandriva.org> 0.62-1mdk
+- New release 0.62
+
+* Mon Apr 03 2006 Götz Waschk <waschk@mandriva.org> 0.61-2mdk
+- fix buildrequires
+- fix URL
+
+* Mon Apr 03 2006 Götz Waschk <waschk@mandriva.org> 0.61-1mdk
+- initial package
+
