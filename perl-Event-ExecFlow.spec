@@ -6,8 +6,8 @@
 
 Name:      perl-Event-ExecFlow
 Summary:   Event-RPC - High level API for event-based execution flow control
-Version:   %perl_convert_version %upstream_version
-Release:   5
+Version:   %{upstream_version}
+Release:   6
 License:   Artistic
 Group:     Development/Perl
 URL:       https://www.exit1.org/Event-ExecFlow/
